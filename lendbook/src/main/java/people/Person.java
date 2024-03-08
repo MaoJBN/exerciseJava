@@ -1,29 +1,30 @@
 
-package com.mycompany.lendbook;
-
+package people;
 import books.Book;
-import java.util.Scanner;
-import people.Person;
+public class Person {
+    int code;
+    String name;
+    int idlib;
+    public Person(int code, String name) {
+        this.code = code;
+        this.name = name;
+    }
+    public int getCode() {
+        return code;
+    }
 
-public class Lendbook {
+    public void setCode(int code) {
+        this.code = code;
+    }
 
-    public static void main(String[] args) {
-        Scanner cap = new Scanner(System.in);
-        
-        System.out.println("Ingrese el primer nombre");
-        String name = cap.nextLine();
-        
-        System.out.println("Ingrese codigo");
-        int code = cap.nextInt();
-        
-        Person student = new Person(code, name);
-        
-        System.out.println();
-        System.out.println(student.getName() + student.getCode());
-        
-        Book book1 = new Book("Harry Potter",5,25,"fantasy","verde");
-        Book book2 = new Book("elnombre del viento",1,23,"fantasy","azul");
-        
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void askthebook(){
         int b =0;
         while(b==0){
              System.out.println("Ingrese el cod del libro");
@@ -56,11 +57,14 @@ public class Lendbook {
         }
        
         
-        
     }
 
-    private static boolean Info() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public int getIdlib() {
+        return idlib;
     }
 
+    public void setIdlib(int idlib) {
+        this.idlib = idlib;
+    }
+    
 }
