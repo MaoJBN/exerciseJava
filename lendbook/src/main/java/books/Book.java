@@ -41,7 +41,6 @@ public class Book {
         }
         
     }
-
     public int getQuantity() {
         return quantity;
     }
