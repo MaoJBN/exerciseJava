@@ -37,7 +37,7 @@ public class Book {
         if(this.color == "verde"){
             return time1;
         }else{
-            return time1;
+            return time2;
         }
         
     }
@@ -48,6 +48,46 @@ public class Book {
 
     public String getTitle() {
         return title;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getLoandate() {
+        return loandate;
+    }
+
+    public void setLoandate(int loandate) {
+        this.loandate = loandate;
+    }
+
+    public int getReturndate() {
+        return returndate;
+    }
+
+    public void setReturndate(int returndate) {
+        this.returndate = returndate;
     }
     
     

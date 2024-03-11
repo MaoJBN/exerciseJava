@@ -1,7 +1,12 @@
 
 package people;
+
+import java.util.Scanner;
 import books.Book;
+
 public class Person {
+    Scanner cap = new Scanner(System.in);
+    int b =0;
     int code;
     String name;
     int idlib;
@@ -25,7 +30,7 @@ public class Person {
         this.name = name;
     }
     public void askthebook(){
-        int b =0;
+        this.b = b;
         while(b==0){
              System.out.println("Ingrese el cod del libro");
         int i = cap.nextInt();
@@ -36,7 +41,7 @@ public class Person {
             }else{
             book1.lendthebook();
             System.out.println("Libro prestado = " + book1.getTitle());
-            student.setIdlib(i);
+            this.idlib=i;
             }
             
         break;
@@ -46,7 +51,7 @@ public class Person {
             }else{
             book2.lendthebook();
             System.out.println("Libro prestado = "+ book2.getTitle());
-            student.setIdlib(i);
+            this.idlib=i;
             }
         break; 
         default:
@@ -55,7 +60,6 @@ public class Person {
             System.out.println("Si quiere otro libro dijite el 0 si no el 1");
             b = cap.nextInt();
         }
-       
         
     }
 
