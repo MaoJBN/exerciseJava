@@ -1,0 +1,6 @@
+com\mycompany\feria\Feria.class
+files\Reader.class
+files\Writer.class
+com\mycompany\feria\people\Participants.class
+com\mycompany\feria\people\Student.class
+com\mycompany\feria\people\Activity.class
